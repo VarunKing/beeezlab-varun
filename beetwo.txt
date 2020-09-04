@@ -1,0 +1,26 @@
+import java.util.*;
+public class beetwo {
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int n =sc.nextInt();
+        int []arr=new int[n];
+        List<Integer> al=new ArrayList<>();
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+            al.add(arr[i]);
+        }
+        int min=Collections.min(al);
+        int max=Collections.max(al);
+        int total_sum=0,array_sum=0;
+        for(int i=min;i<=max;i++)
+        {
+            total_sum=total_sum+i;
+        }
+        for(int i=0;i<n;i++)
+        {
+            array_sum=array_sum+arr[i];
+        }
+        System.out.println(total_sum-array_sum);
+        
+    }

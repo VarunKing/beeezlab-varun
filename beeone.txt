@@ -1,0 +1,14 @@
+import java.util.*
+public class beeone
+{
+    public static void main(String args[]){
+        String a="varun king";
+        int count=0;
+        for(int i=0;i<a.length();i++)
+        if(a.charAt(i)!=' ')
+        {
+            count+=1;
+        }
+        System.out.println(count);
+    }
+}
